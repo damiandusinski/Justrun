@@ -1,14 +1,106 @@
-body {
+html {
+  font-size: 10px;
+  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html body {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-header .hero-container {
-  height: 100vh;
+html body a {
+  text-decoration: none;
+}
+
+header {
   background: url("../img/hero.jpg") no-repeat;
   background-position-x: -160px;
   background-size: cover;
+}
+
+header .hero-container {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+header .hero-container .top-bar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 15px;
+}
+
+header .hero-container .top-bar .top-bar-logo {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+header .hero-container .top-bar .top-bar-nav {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+}
+
+header .hero-container .top-bar .top-bar-nav nav {
+  display: none;
+}
+
+header .hero-container .top-bar .top-bar-nav::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+}
+
+header .hero-container .top-bar .top-bar-nav::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  width: 35px;
+  height: 3px;
+  background-color: #fff;
+}
+
+header .hero-text-container {
+  padding: 0 15px;
+  margin-top: 50vh;
+  text-align: center;
+}
+
+header .hero-text-container .hero-head {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  line-height: 0;
+}
+
+header .hero-text-container .hero-text {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+header .hero-text-container .btn {
+  color: #fff;
+  background-color: #87E38B;
+  font-size: 2.4rem;
+  padding: 4px 30px;
+  border-radius: 20px;
+  border: solid 2px white;
 }
 /*# sourceMappingURL=main.css.map */

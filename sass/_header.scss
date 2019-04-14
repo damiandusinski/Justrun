@@ -1,9 +1,85 @@
 // _header
 header {
+    background: url('../img/hero.jpg')no-repeat;
+    background-position-x: -160px;
+    background-size: cover;
+
     .hero-container {
         height: 100vh;
-        background: url('../img/hero.jpg')no-repeat;
-        background-position-x: -160px;
-        background-size: cover;
+        background-color: rgba(0, 0, 0, .3);
+        color: #fff;
+
+        .top-bar {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 15px;
+
+            .top-bar-logo {
+                font-size: 3rem;
+                text-transform: uppercase;
+            }
+
+            .top-bar-nav {
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+                width: 30px;
+                height: 3px;
+                background-color: #fff;
+
+                nav {
+                    display: none;
+                }
+            }
+
+            .top-bar-nav::before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                right: 0px;
+                width: 35px;
+                height: 3px;
+                background-color: #fff;
+            }
+
+            .top-bar-nav::after {
+                content: '';
+                position: absolute;
+                top: 10px;
+                right: 0px;
+                width: 35px;
+                height: 3px;
+                background-color: #fff;
+            }
+        }
     }
+
+    .hero-text-container {
+        padding: 0 15px;
+        margin-top: 50vh;
+        text-align: center;
+
+        .hero-head {
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            line-height: 0;
+        }
+
+        .hero-text {
+            font-size: 2rem;
+            font-weight: 200;
+        }
+
+        .btn {
+            color: #fff;
+            background-color: #87E38B;
+            font-size: 2.4rem;
+            padding: 4px 30px;
+            border-radius: 20px;
+            border: solid 2px white;
+        }
+    }
+
 }
