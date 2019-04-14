@@ -1,1 +1,14 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header .hero-container {
+  height: 100vh;
+  background: url("../img/hero.jpg") no-repeat;
+  background-position-x: -160px;
+  background-size: cover;
+}
+/*# sourceMappingURL=main.css.map */
