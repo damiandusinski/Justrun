@@ -54,10 +54,6 @@ header .hero-container .top-bar .top-bar-nav {
   background-color: #fff;
 }
 
-header .hero-container .top-bar .top-bar-nav nav {
-  display: none;
-}
-
 header .hero-container .top-bar .top-bar-nav::before {
   content: '';
   position: absolute;
@@ -76,6 +72,10 @@ header .hero-container .top-bar .top-bar-nav::after {
   width: 35px;
   height: 3px;
   background-color: #fff;
+}
+
+header .hero-container .top-bar .top-bar-nav nav {
+  display: none;
 }
 
 header .hero-text-container {

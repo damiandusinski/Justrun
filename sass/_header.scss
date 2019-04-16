@@ -29,30 +29,34 @@ header {
                 height: 3px;
                 background-color: #fff;
 
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -10px;
+                    right: 0px;
+                    width: 35px;
+                    height: 3px;
+                    background-color: #fff;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    right: 0px;
+                    width: 35px;
+                    height: 3px;
+                    background-color: #fff;
+                }
+
                 nav {
                     display: none;
                 }
             }
 
-            .top-bar-nav::before {
-                content: '';
-                position: absolute;
-                top: -10px;
-                right: 0px;
-                width: 35px;
-                height: 3px;
-                background-color: #fff;
-            }
 
-            .top-bar-nav::after {
-                content: '';
-                position: absolute;
-                top: 10px;
-                right: 0px;
-                width: 35px;
-                height: 3px;
-                background-color: #fff;
-            }
+
+
         }
     }
 
